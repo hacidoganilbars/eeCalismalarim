@@ -4,22 +4,17 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 
 import lombok.Data;
-
 @Entity
-public @Data class Server {
+public @ Data class Adres {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int id;
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	int id;
 	
-	private String name;
+	String name;
 	
-	private String ip;
-	
-	@ManyToOne
-	Person assigneePerson;
 
 }

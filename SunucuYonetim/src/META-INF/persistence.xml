@@ -3,6 +3,9 @@
 	<persistence-unit name="SunucuYonetimi">
 	
 	<class> com.hacidoganilbars.entity.Server</class>
+	<class> com.hacidoganilbars.entity.Adres</class>
+	<class> com.hacidoganilbars.entity.Person</class>
+	<class> com.hacidoganilbars.entity.Yonetici</class>
 	
 	<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
