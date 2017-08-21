@@ -23,12 +23,15 @@ public class Islem {
 		// x.setMarka("mrcds");
 		// x.setSeriNo(1);
 		// dao.save(x);
+		
+		
 
-		Minibus y = new Minibus();
-		y.setIsim("Mercedes");
-		y.setMarka("mrcds");
-		y.setSeriNo(1);
-		dao.save(y);
+		// hata verdirmez üretilen sýnýflar farklý id ve marka ayný
+		// Minibus y = new Minibus();
+		// y.setIsim("Mercedes");
+		// y.setMarka("mrcds");
+		// y.setSeriNo(1);
+		// dao.save(y);
 
 		Araba haciMurat = new Araba();
 		haciMurat.setIsim("Hacý Murat");
