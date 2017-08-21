@@ -33,8 +33,7 @@ public class DAO {
 	}
 
 	public List<Ogrenci> ogrList() {
-		EntityManagerFactory entityManagerFactoryObject = Persistence.createEntityManagerFactory("OkulYonetim");
-		EntityManager entityManagerObject = entityManagerFactoryObject.createEntityManager();
+
 		TypedQuery<Ogrenci> ogrQuery = em.createQuery("SELECT o FROM Ogrenci o", Ogrenci.class);
 		List<Ogrenci> ogrenciList = ogrQuery.getResultList();
 		System.out.println("\n---------OGRENCÝ LÝSTESÝ---------");
@@ -43,14 +42,12 @@ public class DAO {
 		}
 		System.out.println("---------------------------------\n");
 
-		entityManagerObject.close();
-		entityManagerFactoryObject.close();
+		em.close();
+		emf.close();
 		return null;
 	}
 
 	public List<Ogretmen> ogrtList() {
-		EntityManagerFactory entityManagerFactoryObject = Persistence.createEntityManagerFactory("OkulYonetim");
-		EntityManager entityManagerObject = entityManagerFactoryObject.createEntityManager();
 		TypedQuery<Ogretmen> ogrtQuery = em.createQuery("SELECT o FROM Ogretmen o", Ogretmen.class);
 		List<Ogretmen> ogretmenList = ogrtQuery.getResultList();
 		System.out.println("\n---------OGRETMEN LÝSTESÝ---------");
@@ -59,14 +56,12 @@ public class DAO {
 		}
 		System.out.println("---------------------------------\n");
 
-		entityManagerObject.close();
-		entityManagerFactoryObject.close();
+		em.close();
+		emf.close();
 		return null;
 	}
 
 	public List<Mudur> mudList() {
-		EntityManagerFactory entityManagerFactoryObject = Persistence.createEntityManagerFactory("OkulYonetim");
-		EntityManager entityManagerObject = entityManagerFactoryObject.createEntityManager();
 		TypedQuery<Mudur> mudQuery = em.createQuery("SELECT m FROM Mudur m", Mudur.class);
 		List<Mudur> mudurList = mudQuery.getResultList();
 		System.out.println("\n---------MUDUR LÝSTESÝ---------");
@@ -75,8 +70,8 @@ public class DAO {
 		}
 		System.out.println("---------------------------------\n");
 
-		entityManagerObject.close();
-		entityManagerFactoryObject.close();
+		em.close();
+		emf.close();
 		return null;
 	}
 
