@@ -42,8 +42,6 @@ public class DAO {
 		}
 		System.out.println("---------------------------------\n");
 
-		em.close();
-		emf.close();
 		return null;
 	}
 
@@ -55,9 +53,6 @@ public class DAO {
 			System.out.println(o.getId() + " " + o.getIsim() + " " + o.getSoyIsim() + " " + o.getBrans());
 		}
 		System.out.println("---------------------------------\n");
-
-		em.close();
-		emf.close();
 		return null;
 	}
 
@@ -69,9 +64,6 @@ public class DAO {
 			System.out.println(m.getId() + " " + m.getIsim() + " " + m.getSoyIsim());
 		}
 		System.out.println("---------------------------------\n");
-
-		em.close();
-		emf.close();
 		return null;
 	}
 
