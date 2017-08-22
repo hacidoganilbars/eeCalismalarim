@@ -5,7 +5,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 public class DAO {
-	EntityManager em;
+	public EntityManager em;
 
 	public void connection() {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("Tasitlar");

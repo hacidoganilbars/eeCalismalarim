@@ -9,7 +9,6 @@ import javax.persistence.GenerationType;
 public class TasitId implements Serializable {
 
 	@Column(name = "seri_numarasi")
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	int seriNo;
 
 	String marka;
