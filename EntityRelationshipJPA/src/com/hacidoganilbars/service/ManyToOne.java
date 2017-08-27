@@ -10,7 +10,7 @@ import com.hacidoganilbars.entity.Departman;
 public class ManyToOne {
 	public static void main(String[] args) {
 
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("EntityRelaotionshipJPA");
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("EntityRelationshipJPA");
 		EntityManager em = emf.createEntityManager();
 		em.getTransaction().begin();
 
