@@ -13,7 +13,7 @@ import com.hacidoganilbars.entity.Departman;
 public class OneToMany {
 	public static void main(String[] args) {
 
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("EntityRelaotionship1JPA");
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("EntityRelationship1JPA");
 		EntityManager em = emf.createEntityManager();
 		em.getTransaction().begin();
 
